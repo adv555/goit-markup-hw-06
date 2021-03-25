@@ -565,6 +565,20 @@ img {
   pointer-events: none;
   transform: scale(1.5);
 }
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  /* box-sizing: border-box; */
+  border-radius: 4px;
+  padding-left: 42px;
+}
+
 /* ======= END MODAL ======= */
 
 /* ======= PORTFOLIO PAGE ======= */

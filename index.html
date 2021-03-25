@@ -407,7 +407,7 @@
         </div>
      </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita nisi velit voluptate ex. Distinctio, quaerat laboriosam assumenda dolores, inventore est corporis quos, expedita laudantium aperiam a? Omnis, possimus expedita? Iusto?</p> -->
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -415,8 +415,41 @@
             <use href="./images/sprite.svg#icon-close-black"></use>
           </svg>
         </button>
+        <form action="#" class="modal-form">
+          <label class="modal-form-field">
+            Имя
+            <input type="text" name="user-name" class="modal-form-input" required minlength="2">
+            <svg class="user-icon" width="18px"' height="18px">
+              <use href="./images/sprite.svg#icon-close-black"></use>
+            </svg>
+          </label>
+          <label class="modal-form-field">
+            Телефон
+            <input type="tel" name="user-phone" class="modal-form-input" required pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" title="096-111-11-11">
+            <svg class="phone-icon" width="18px"' height="18px">
+                <use href="./images/sprite.svg#icon-close-black"></use>
+            </svg>
+          </label>
+          <label class="modal-form-field">
+            Почта
+            <input type="email" name="user-email" class="modal-form-input" required>
+            <svg class="email-icon" width="18px"' height="18px">
+              <use href="./images/sprite.svg#icon-close-black"></use>
+            </svg>
+          </label>
+          <label class="modal-form-field">
+            Комментарий
+            <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
+          </label>
+          <input type="checkbox" name="user-term" class="modal-form-term">
+          <label for="" class="modal-form-check-desc">
+            Соглашаюсь с рассылкой и принимаю 
+            <a href="#">Условия договора</a>
+          </label>
+          <button type="submit" class="modal-form-btn">Отправить</button>
+        </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
