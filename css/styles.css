@@ -83,6 +83,7 @@ img {
 .hero,
 .footer {
   background: var(--body-bg-dark);
+  margin: 0 auto;
 }
 
 .nav-list .current {
