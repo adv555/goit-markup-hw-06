@@ -678,7 +678,7 @@ img {
 /* checked */
 
 .modal-form-term:checked + .modal-form-check-desc::before {
-  /* background-image: url(); */
+  background-image: url(../images/modal/icon\ check.svg);
   background-origin: border-box;
   border: transparent;
   border-radius: 2px;
