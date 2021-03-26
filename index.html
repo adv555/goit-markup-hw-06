@@ -405,6 +405,22 @@
             </li>
           </ul>
         </div>
+        <div class="signup">
+          <b class="join">Подпишитесь на рассылку</b>
+          <div class="signup-form-wrapper">
+            <form class="signup-form" action="#">
+              <label class="signup-form-field">
+                <input class="signup-form-input" type="email" name="user-email" placeholder="E-mail" required>
+              </label>
+              <button class="signup-form-btn" type="submit">
+                Подписаться
+                <svg class="btn-icon" width="24px" height="24px">
+                  <use href="./images/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
      </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -450,7 +466,7 @@
               <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
            </span>
           </label>
-          <input type="checkbox" id="user-term" name="user-term" class="modal-form-term visually-hidden ">
+          <input type="checkbox" id="user-term" name="user-term" class="modal-form-term visually-hidden " required>
           <label for="user-term" class="modal-form-check-desc">
             Соглашаюсь с рассылкой и принимаю&nbsp;
             <a href="#" class="term-link">Условия договора</a>
