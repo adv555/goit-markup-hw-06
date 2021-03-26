@@ -155,7 +155,7 @@ img {
 
 /* ======= HEADER ======= */
 
-.logo {
+.nav .logo {
   margin-right: 93px;
 }
 .logo-black {
@@ -530,8 +530,8 @@ img {
 
 .signup-form-input {
   height: 50px;
-  min-width: 346px;
-  /* min-width: 358px; */
+  /* min-width: 346px; */
+  min-width: 358px;
   margin-right: 12px;
   padding-left: 16px;
 
@@ -637,14 +637,18 @@ img {
   border-radius: 50%;
   cursor: pointer;
 }
-.close-icon {
+.modal-close-btn .close-icon {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: fill 250ms var(--cubik);
 }
-/* .modal-close-btn:focus + .close-icon */
 
+.modal-close-btn:focus .close-icon,
+.modal-close-btn:hover .close-icon {
+  fill: var(--accent-color);
+}
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -771,6 +775,7 @@ img {
 .modal-form-term:focus + .modal-form-check-desc::before {
   border-color: var(--accent-color);
 }
+
 .term-link {
   color: var(--accent-color);
 }
